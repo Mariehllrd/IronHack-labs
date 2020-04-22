@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>lab_mysql</string>
+			<key>host</key>
+			<string>127.0.01</string>
+			<key>kcid</key>
+			<string>4000296867165950090</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8mb4</string>
+			<key>contentFilterV2</key>
+			<dict>
+				<key>children</key>
+				<array/>
+				<key>filterClass</key>
+				<string>groupNode</string>
+				<key>isConjunction</key>
+				<true/>
+			</dict>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRk
+			YXRhgAGvEA8LDBkaGxwdIyQlLDA0ODxVJG51bGzTDQ4PEBQYV05T
+			LmtleXNaTlMub2JqZWN0c1YkY2xhc3OjERITgAKAA4AEoxUWF4AF
+			gAaACoAOVHR5cGVUcm93c1RrZXlzXxAmU2VsZWN0aW9uRGV0YWls
+			VHlwZVByaW1hcnlLZXllZERldGFpbHPTDQ4PHiAioR+AB6EhgAiA
+			CVEyCdImJygpWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFi
+			bGVEaWN0aW9uYXJ5oygqK1xOU0RpY3Rpb25hcnlYTlNPYmplY3TS
+			Dg8tL6EugAuADdIPMTIzWU5TLnN0cmluZ4AMUklE0iYnNTZfEA9O
+			U011dGFibGVTdHJpbmejNTcrWE5TU3RyaW5n0iYnOTpeTlNNdXRh
+			YmxlQXJyYXmjOTsrV05TQXJyYXnSJicqPaIqKwAIABEAGgAkACkA
+			MgA3AEkATABRAFMAZQBrAHIAegCFAIwAkACSAJQAlgCaAJwAngCg
+			AKIApwCsALEA2gDhAOMA5QDnAOkA6wDtAO4A8wD+AQcBHQEhAS4B
+			NwE8AT4BQAFCAUcBUQFTAVYBWwFtAXEBegF/AY4BkgGaAZ8AAAAA
+			AAACAQAAAAAAAAA+AAAAAAAAAAAAAAAAAAABog==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{19, 0}, {869, 738}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string># Update database
+USE lab_mysql;
+
+# Miami
+UPDATE customers
+SET city = 'Miami'
+WHERE city = 'Mimia';
+
+# email addresses
+UPDATE customers
+SET email = 'ppicasso@gmail.com'
+WHERE customerID = 10001;
+
+UPDATE customers
+SET email = 'lincoln@us.gov'
+WHERE customerID = 20001;
+
+UPDATE customers
+SET email = 'hello@napoleon.me'
+WHERE customerID = 30001;</string>
+			<key>table</key>
+			<string>customers</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>353</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>UPDATE customers
+SET email = 'hello@napoleon.me'
+WHERE customerID = 30001</string>
+		<string>UPDATE customers
+SET email = 'lincoln@us.gov'
+WHERE customerID = 20001</string>
+		<string># email addresses
+UPDATE customers
+SET email = 'ppicasso@gmail.com'
+WHERE customerID = 10001</string>
+		<string>Pablo Picasso</string>
+		<string># email addresses
+UPDATE customers
+SET email = 'ppicasso@gmail.com'
+WHERE name = Pablo Picasso</string>
+		<string>'ppicasso@gmail.com', 'lincoln@us.gov','hello@napoleon.me'</string>
+		<string># email addresses
+UPDATE customers
+SET email = 'ppicasso@gmail.com', 'lincoln@us.gov','hello@napoleon.me'
+WHERE email IS NULL</string>
+		<string># email addresses
+UPDATE customers
+SET email = ('ppicasso@gmail.com', 'lincoln@us.gov','hello@napoleon.me')
+WHERE email IS NULL</string>
+		<string># email addresses
+UPDATE customers.email
+SET email = ('ppicasso@gmail.com', 'lincoln@us.gov','hello@napoleon.me')
+WHERE email IS NULL</string>
+		<string># email addresses
+UPDATE customers
+SET email = ('ppicasso@gmail.com', 'lincoln@us.gov','hello@napoleon.me')
+WHERE email ISNULL</string>
+		<string># Miami
+UPDATE customers
+SET city = 'Miami'
+WHERE city = 'Mimia'</string>
+		<string># invoices dummy data
+INSERT INTO invoices (number, date, VIN, customerID,	staffID) VALUES
+	(852399038,	22-08-2018,	0,	1,	3),
+	(731166526,	31-12-2018,	3,	0,	5),
+	(271135104,	22-01-2019,	2,	2,	7)</string>
+		<string># invoices dummy data
+INSERT INTO invoices (number, date, VIN, customer_id,	staff_id) VALUES
+	(852399038,	22-08-2018,	0,	1,	3),
+	(731166526,	31-12-2018,	3,	0,	5),
+	(271135104,	22-01-2019,	2,	2,	7)</string>
+		<string># invoices dummy data
+INSERT INTO invoices (number, date, VIN, customer,	staff) VALUES
+	(852399038,	22-08-2018,	0,	1,	3),
+	(731166526,	31-12-2018,	3,	0,	5),
+	(271135104,	22-01-2019,	2,	2,	7)</string>
+		<string># staff dummy data
+INSERT INTO staff (staffID, name, store) VALUES
+	(00001,	'Petey Cruiser',	'Madrid'),
+	(00002,	'Anna Sthesia',	'Barcelona'),
+	(00003,	'Paul Molive', 'Berlin'),
+	(00004,	'Gail Forcewind',	'Paris'),
+	(00005,	'Paige Turner',	'Miami'),
+	(00006,	'Bob Frapples',	'Mexico City'),
+	(00007,	'Walter Melon',	'Amsterdam'),
+	(00008,	'Shonda Leer',	'São Paulo')</string>
+		<string># customers dummy data
+INSERT INTO customers (customerID, name, phone, address, city, province, country, zip_code) VALUES
+	(10001,	'Pablo Picasso', '+34 636 17 63 82',	'Paseo de la Chopera, 14', 'Madrid', 'Madrid', 'Spain',	28045),
+	(20001,	'Abraham Lincoln', '+1 305 907 7086', '120 SW 8th St', 'Miami', 'Florida', 'United States', 33130),
+	(30001,	'Napoléon Bonaparte', '+33 1 79 75 40 00',	'40 Rue du Colisée', 'Paris', 'Île-de-France', 'France', 75008)</string>
+		<string># cars dummy data
+
+INSERT INTO cars (VIN, manufacturer, model, year, color) VALUES
+	('3K096I98581DHSNUP', 'Volkswagen',	'Tiguan', 2019, 'Blue'), 
+	('ZM8G7BEUQZ97IH46V', 'Peugeot', 'Rifter', 2019, 'Red'),
+	('RKXVNNIHLVVZOUB4M', 'Ford', 'Fusion',	2018, 'White'),
+	('HKNDGS7CU31E9Z7JW', 'Toyota',	'RAV4',	2018, 'Silver'),
+	('DAM41UDN3CHU2WVF6', 'Volvo', 'V60', 2019,	'Gray'),
+	('DAM41UDN3CHU2WVF6', 'Volvo', 'V60 Cross Country',	2019, 'Gray')</string>
+		<string>SET sql_mode = "NO_AUTO_VALUE_ON_ZERO"</string>
+		<string># Seeding the Database
+USE lab_mysql</string>
+		<string># Table4 - Invoices - the invoice number, date, car, customer, and salesperson related to each car sale.
+CREATE TABLE invoices(
+   ID INT PRIMARY KEY AUTO_INCREMENT,
+   number VARCHAR(20),
+   date DATE,
+   VIN VARCHAR(17),
+   customerID VARCHAR(10),
+   staffID VARCHAR(10))</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>8.0.18</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
